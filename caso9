@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string codigo = "   OLD-ING-2026   ";
+
+        string codigoLimpio = codigo.Trim();
+
+        codigoLimpio = codigoLimpio.Replace("OLD-", "NEW-");
+
+        bool esIngenieria = codigoLimpio.Contains("ING");
+
+        Console.WriteLine("Código limpio: " + codigoLimpio);
+        Console.WriteLine("¿Pertenece a ingeniería?: " + esIngenieria);
+    }
+}
